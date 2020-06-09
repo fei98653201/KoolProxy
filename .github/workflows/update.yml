@@ -1,13 +1,13 @@
 name: Update_Rules
 on:
-  # push:
-  #  branches: 
-  #    - master
-  schedule:
+   push:
+    branches: 
+      - master
+   schedule:
     - cron: 0 0 * * *
-  # release:
-  #   types: [published]
-  watch:
+   release:
+     types: [published]
+   watch:
     types: started
     
 jobs:
